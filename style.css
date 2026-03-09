@@ -1,0 +1,104 @@
+/* STYLE UMUM */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg,#0077ff,#00c6ff);
+    margin:0;
+    color:white;
+    text-align:center;
+}
+
+/* NAVBAR */
+nav{
+    background:#111;
+    padding:15px;
+}
+
+nav a{
+    color:white;
+    margin:15px;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:yellow;
+}
+
+/* CONTAINER */
+.container{
+    max-width:900px;
+    margin:auto;
+    background:rgba(0,0,0,0.4);
+    padding:30px;
+    border-radius:15px;
+    margin-top:40px;
+    box-shadow:0 0 20px rgba(0,0,0,0.3);
+}
+
+/* FOTO PROFIL */
+img{
+    width:200px;
+    height:200px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid white;
+    margin-top:10px;
+}
+
+/* INFORMASI PROFIL */
+.info{
+    font-size:18px;
+    margin:10px 0;
+}
+
+/* GOOGLE MAPS */
+iframe{
+    margin-top:20px;
+    border-radius:15px;
+    width:100%;
+    max-width:600px;
+}
+
+/* ORDERED LIST (PENDIDIKAN) */
+ol{
+    font-size:18px;
+    margin-top:20px;
+    text-align:left;
+    display:inline-block;
+}
+
+/* UNORDERED LIST (SKILL) */
+ul{
+    list-style-type:square;
+    font-size:18px;
+    margin-top:20px;
+    text-align:left;
+    display:inline-block;
+}
+
+/* TABLE LAYOUT */
+table{
+    width:100%;
+    margin-top:30px;
+    border-collapse:collapse;
+    background:white;
+    color:black;
+}
+
+table td{
+    border:1px solid black;
+    padding:20px;
+}
+
+/* SIDEBAR MENU */
+table ul{
+    list-style-type:disc;
+    text-align:left;
+}
+
+/* FOOTER */
+footer{
+    margin-top:20px;
+    font-size:14px;
+}
