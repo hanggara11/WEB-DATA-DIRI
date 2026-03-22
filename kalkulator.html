@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Kalkulator</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: linear-gradient(135deg,#ff7e5f,#feb47b);
+            color: white;
+            text-align: center;
+        }
+
+        nav {
+            background: rgba(0,0,0,0.3);
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            margin: 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        input {
+            width: 100px;
+            padding: 10px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px;
+            margin: 5px;
+            border: none;
+            background: #00ffcc;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #00ccaa;
+        }
+
+        h3 {
+            margin-top: 20px;
+        }
+    </style>
+
+    <script>
+        function hitung(operator) {
+            let a = parseFloat(document.getElementById("angka1").value);
+            let b = parseFloat(document.getElementById("angka2").value);
+            let hasil;
+
+            if (operator === '+') hasil = a + b;
+            else if (operator === '-') hasil = a - b;
+            else if (operator === '*') hasil = a * b;
+            else if (operator === '/') hasil = a / b;
+
+            document.getElementById("hasil").innerText = "Hasil: " + hasil;
+        }
+    </script>
+
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="form.html">Form</a>
+    <a href="kalkulator.html">Kalkulator</a>
+</nav>
+
+<div class="container">
+    <h2>Kalkulator Sederhana</h2>
+
+    <input type="number" id="angka1" placeholder="Angka 1">
+    <input type="number" id="angka2" placeholder="Angka 2"><br>
+
+    <button onclick="hitung('+')">+</button>
+    <button onclick="hitung('-')">-</button>
+    <button onclick="hitung('*')">×</button>
+    <button onclick="hitung('/')">÷</button>
+
+    <h3 id="hasil">Hasil: </h3>
+</div>
+
+</body>
+</html>
